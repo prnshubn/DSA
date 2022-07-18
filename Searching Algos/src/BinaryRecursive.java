@@ -26,9 +26,7 @@ public class BinaryRecursive
 		{
 			mid=min+((max-min)/2);
 			if(ar[mid]==search)
-			{
 				return mid;
-			}
 			else if(search>ar[mid])
 				return binarySearch(ar, search, mid+1, max);
 			else
