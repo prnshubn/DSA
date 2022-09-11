@@ -120,6 +120,54 @@ public class MyLinkedList
 		}
 	}
 	
+	//reverse LinkedList iteratively
+	public Node reverseIterative()
+	{
+		if(head==null || head.next==null)
+			return head;
+		else
+		{
+			Node prev=null;
+			Node curr=head;
+			while(curr!=null)
+			{
+				Node temp=curr.next;
+				curr.next=prev;
+				prev=curr;
+				curr=temp;
+			}
+			return prev;
+		}
+	}
+	
+	//reverse LinkedList recursively
+	public Node reverseRecursive(Node head)
+	{
+		if(head==null || head.next==null)
+			return head;
+		else
+		{
+			Node newHead=reverseRecursive(head.next);
+			Node headNext=head.next;
+			headNext.next=head;
+			head.next=null;
+			return newHead;
+		}
+	}
+	
+	//return middle of LinkedList in one iteration
+	public Node middle(Node head)
+	{
+		Node slow=head;
+		Node fast=head;
+		while(fast.next!=null && fast.next.next!=null)
+		{
+			slow=slow.next;
+			fast=fast.next.next;
+		}
+		return slow;
+	}
+	
 	//return size
 	public int size()
 	{
