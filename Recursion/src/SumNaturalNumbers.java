@@ -1,4 +1,4 @@
-package easy;
+
 import java.util.Scanner;
 public class SumNaturalNumbers
 {
@@ -10,20 +10,16 @@ public class SumNaturalNumbers
 		long result=sumNatural(n);
 		System.out.println("Sum of n natural numbers is: "+result);
 	}
-	static long sum=0;
 	public static long sumNatural(int n)
 	{
 		if(n==0)
 			return 0;
-		sum+=n;
-		sumNatural(n-1);
-		return sum;
+		return n+sumNatural(n-1);
 	}
 }
 
-//Below is the Apna College Solution
+//parameterized way
 /*
-package Easy;
 import java.util.Scanner;
 public class SumNaturalNumbers
 {

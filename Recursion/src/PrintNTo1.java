@@ -1,9 +1,12 @@
-package easy;
-public class Print5to1
+import java.util.Scanner;
+
+public class PrintNTo1
 {
 	public static void main(String[] args)
 	{
-		int n=5;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter n");
+		int n=sc.nextInt();
 		printNum(n);
 	}
 	public static void printNum(int n)
