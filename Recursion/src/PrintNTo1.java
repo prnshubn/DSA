@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 public class PrintNTo1
@@ -7,13 +9,13 @@ public class PrintNTo1
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter n");
 		int n=sc.nextInt();
-		printNum(n);
+		print(n);
 	}
-	public static void printNum(int n)
+	public static void print(int n)
 	{
 		if(n==0)
 			return;
 		System.out.println(n);
-		printNum(n-1);
+		print(n-1);
 	}
 }

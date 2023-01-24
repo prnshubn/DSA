@@ -1,22 +1,18 @@
 
-
 import java.util.Scanner;
-
-public class Print1ToN
+public class NthFibonacci
 {
 	public static void main(String[] args)
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter n");
 		int n=sc.nextInt();
-		int i=1;
-		print(i,n);
+		System.out.println("Nth Fibonacci is: "+fibo(n));
 	}
-	public static void print(int i, int n)
+	public static int fibo(int n)
 	{
-		if(i>n)
-			return;
-		System.out.println(i);
-		print(i+1,n);
+		if(n<=1)
+			return n;
+		return fibo(n-1)+fibo(n-2);
 	}
 }

@@ -1,4 +1,6 @@
 
+
+//functional way
 import java.util.Scanner;
 public class SumNaturalNumbers
 {

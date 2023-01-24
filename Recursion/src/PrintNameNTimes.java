@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 public class PrintNameNTimes
@@ -9,13 +11,13 @@ public class PrintNameNTimes
 		String s=sc.nextLine();
 		System.out.println("Enter how many times you want to print");
 		int n=sc.nextInt();
-		printName(s,n);
+		print(s,n);
 	}
-	public static void printName(String s,int n)
+	public static void print(String s, int n)
 	{
 		if(n==0)
 			return;
 		System.out.println(s);
-		printName(s,n-1);
+		print(s,n-1);
 	}
 }

@@ -1,5 +1,7 @@
 
+
 import java.util.Scanner;
+
 public class Fibonacci
 {
 	public static void main(String[] args)
@@ -11,8 +13,8 @@ public class Fibonacci
 		if(n<=0)
 			System.out.println("Invalid Input");
 		else if(n==1)
-			System.out.println("0");
-		else if(n>1)
+			System.out.println(a);
+		else
 		{
 			System.out.print(a+","+b+",");
 			fibonacci(a,b,n-2);
